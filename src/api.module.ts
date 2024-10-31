@@ -1,20 +1,21 @@
 import { Module } from "@nestjs/common";
 import { RouterModule } from "@nestjs/core";
-import { AuthModule } from "./business/auth/auth.module.js";
+import { modules as cm } from "./business/constant.js";
 
 @Module({
     imports: [
+        ...Object.values(cm),
         RouterModule.register([
             {
                 path: 'api',
                 children: [
                     {
                         path: 'auth',
-                        module: AuthModule
+                        module: cm['AuthModule']
                     }
                 ]
             }
         ])
     ]
 })
-export class ApiModule {}
+export class ApiModule { }
