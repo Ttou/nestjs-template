@@ -1,5 +1,11 @@
 {
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
-    }
+    },
+    "cSpell.words": [
+        "bullmq",
+        "mikro",
+        "nestjs",
+        "tseslint"
+    ]
 }
