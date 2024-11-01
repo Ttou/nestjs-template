@@ -14,6 +14,10 @@ import { modules as cm } from './business/constant.js'
             path: 'auth',
             module: cm['AuthModule'],
           },
+          {
+            path: 'upload',
+            module: cm['UploadModule'],
+          },
         ],
       },
     ]),
