@@ -1,4 +1,4 @@
-import { createTransport, Transporter } from "nodemailer";
+import { createTransport, Transporter } from 'nodemailer'
 
 export interface EmailModuleOptions { }
 
